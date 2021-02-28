@@ -17,10 +17,10 @@ try {
 
 module.exports = {
   siteMetadata: {
-    title: 'GCN',
+    title: 'Mikel-Jon West',
     description:
-      'A starter template to build amazing static websites with Gatsby, Contentful and Netlify',
-    siteUrl: 'https://gcn.netlify.com',
+      'Mikel-Jon West Portfolio',
+    siteUrl: 'https://mikewest.pro',
     image: '/images/share.jpg',
     menuLinks: [
       {
@@ -82,8 +82,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: 'GCN',
-        short_name: 'GCN',
+        name: 'Mikel-Jon West Protfolio',
+        short_name: 'Mike West Pro',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#ffffff',
