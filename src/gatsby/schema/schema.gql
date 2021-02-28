@@ -207,7 +207,9 @@ type ContentfulTagSysContentTypeSys {
 
 type ContentfulPage implements Node @derivedTypes @dontInfer {
   title: String
+  subTitle: String
   slug: String
+  heroImage: ContentfulAsset @link(by: "id", from: "heroImage___NODE")
   body: contentfulPageBodyTextNode @link(by: "id", from: "body___NODE")
   metaDescription: contentfulPageMetaDescriptionTextNode @link(by: "id", from: "metaDescription___NODE")
   spaceId: String

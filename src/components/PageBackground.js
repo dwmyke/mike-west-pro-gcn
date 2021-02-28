@@ -28,27 +28,11 @@ const BgImg = styled(Img)`
   }
 `
 
-const Title = styled.h1`
-  z-index: 2;
-  font-size: 3em;
-  text-transform: capitalize;
-  font-weight: 600;
-  position: absolute;
-  width: 100%;
-  max-width: ${props => props.theme.sizes.maxWidthCentered};
-  padding: 0 1rem;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-`
-
-const Hero = props => (
-  <Wrapper height={props.height}>
-    <BgImg fluid={props.image.fluid} backgroundColor={'#eeeeee'} />
-    <Title>{props.title}</Title>
-    </Wrapper>
-)
-
-export default Hero
+const PageBackground = props => (
+    <Wrapper height={props.height}>
+      <BgImg fluid={props.image.fluid} backgroundColor={'#eeeeee'} />
+      {props.children}
+      </Wrapper>
+  )
+  
+  export default PageBackground
